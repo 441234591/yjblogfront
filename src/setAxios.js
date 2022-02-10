@@ -1,8 +1,8 @@
 import axios from 'axios'
 import store from './store/index'
- axios.defaults.baseURL = 'http://127.0.0.1:8000/';
+// axios.defaults.baseURL = 'http://127.0.0.1:8000/';
 //axios.defaults.baseURL = 'http://172.16.11.130:3000/';
-//axios.defaults.baseURL = 'http://121.5.236.190:8000/';
+axios.defaults.baseURL = 'http://121.5.236.190:8000/';
 
 export default function setAxios(){
     //请求拦截

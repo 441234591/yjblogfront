@@ -79,7 +79,8 @@
                         this.loading = true
                         this.$axios.post('/api/user/login',this.loginForm)
                             .then(res => {
-                                let result = res.data
+                                let result = res.data;
+                                console.log(JSON.stringify(result));
                                 if(result.code === 0) {
                                     Cookie.set('token',result.token)
                                     this.$store.commit('setToken',result.token)
